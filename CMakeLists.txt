@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( digital_image_processing )
+find_package( OpenCV REQUIRED )
+add_executable( affine affine_transforms.cpp )
+target_link_libraries( affine ${OpenCV_LIBS} )
