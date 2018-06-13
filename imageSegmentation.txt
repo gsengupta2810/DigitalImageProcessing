@@ -1,0 +1,46 @@
+From wikipedia - 
+ 
+ *image segmentation is the process of partitioning a digital image into     multiple segments (sets of pixels, also known as super-pixels).
+ More precisely, image segmentation is the process of assigning a label to every pixel in an image such that pixels with the same label share certain characteristics.
+
+Methods used for segmentation :- 
+	
+	1. Thresholding : simple thresholding on a grayscale image to convert it into a binary image with required fratures distinguished.Histogram thresholding, Otsu's binarisation are some thresolding methods used.K-means clusturing is also used.New methods suggested the usage of multi-dimensional fuzzy rule-based non-linear thresholds. In these works decision over each pixel's membership to a segment is based on multi-dimensional rules derived from fuzzy logic and evolutionary algorithms based on image lighting environment and application.
+
+	2.Clustering Methods: K-means is an iterative technique used for clustering the image into K clusters.K can be selected manually, randomly, or by a heuristic.This algorithm is guaranteed to converge, but it may not return the optimal solution. The quality of the solution depends on the initial set of clusters and the value of K.
+
+	3.Comparision based methods: The method describes each segment by its texture and boundary shape. Each of these components is modeled by a probability distribution function and its coding length is computed as follows:-
+	
+	The boundary encoding leverages the fact that regions in natural images tend to have a smooth contour. This prior is used by Huffman coding to encode the difference chain code of the contours in an image. Thus, the smoother a boundary is, the shorter coding length it attains.
+
+	Texture is encoded by lossy compression in a way similar to minimum description length (MDL) principle, but here the length of the data given the model is approximated by the number of samples times the entropy of the model. The texture in each region is modeled by a multivariate normal distribution whose entropy has a closed form expression. An interesting property of this model is that the estimated entropy bounds the true entropy of the data from above. This is because among all distributions with a given mean and covariance, normal distribution has the largest entropy. Thus, the true coding length cannot be more than what the algorithm tries to minimize.
+
+	For any given segmentation of an image, this scheme yields the number of bits required to encode that image based on the given segmentation. Thus, among all possible segmentations of an image, the goal is to find the segmentation which produces the shortest coding length
+
+	4.Hitogram based methods: These are among the most efficient methods of clustering/segmentation because basically they just need to pass through the pixels once.Peaks and valleys are used to locate clusters in the image. 
+	A refinement of this technique is to recursively apply the histogram-seeking method to clusters in the image in order to divide them into smaller clusters. This operation is repeated with smaller and smaller clusters until no more clusters are formed.
+	One disadvantage of this method is that it may be difficult to find significant peaks and valleys in many images.
+
+	5.Edge detction: Region boundaries and edges are closely related, since there is often a sharp adjustment in intensity at the region boundaries. Edge detection techniques have therefore been used as the base of another segmentation technique.
+	The edges identified by edge detection are often disconnected. To segment an object from an image however, one needs closed region boundaries. The desired edges are the boundaries between such objects or spatial-taxons.
+
+	6.Dual Clustering Method: This method is a combination of three characteristics of the image: partition of the image based on histogram analysis is checked by high compactness of the clusters (objects), and high gradients of their borders. 
+
+	7.Region-growing methods: Region-growing methods rely mainly on the assumption that the neighboring pixels within one region have similar values. The common procedure is to compare one pixel with its neighbors. If a similarity criterion is satisfied, the pixel can be set to belong to the cluster as one or more of its neighbors. The selection of the similarity criterion is significant and the results are influenced by noise in all instances.
+	Some common region-growing methods are -
+		Statistical Region Merging 
+		Seeded and Unseeded 
+		Lambda-Connected segmentation
+		Split-and-Merge Segmentation
+
+	8.Partial differential Equation based methods: Using a partial differential equation (PDE)-based method and solving the PDE equation by a numerical scheme, one can segment the image.[28] Curve propagation is a popular technique in this category, with numerous applications to object extraction, object tracking, stereo reconstruction, etc. The central idea is to evolve an initial curve towards the lowest potential of a cost function, where its definition reflects the task to be addressed.
+	Some common pde methods - 
+		Parametric methods 
+		Level Set methods
+		Fast marching methods
+
+	9.Variational Methods: The goal of variational methods is to find a segmentation which is optimal with respect to a specific energy functional. The functionals consist of a data fitting term and a regularizing terms. A classical representative is the Potts model defined for an image {\displaystyle f} f.
+
+	10.Graph Partitioning methods: Graph partitioning methods are an effective tools for image segmentation since they model the impact of pixel neighborhoods on a given cluster of pixels or pixel, under the assumption of homogeneity in images. In these methods, the image is modeled as a weighted, undirected graph. Usually a pixel or a group of pixels are associated with nodes and edge weights define the (dis)similarity between the neighborhood pixels.The graph (image) is then partitioned according to a criterion designed to model "good" clusters. Each partition of the nodes (pixels) output from these algorithms are considered an object segment in the image.
+
+	 

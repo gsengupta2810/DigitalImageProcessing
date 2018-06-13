@@ -1,0 +1,1 @@
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment2/CMakeFiles/out.dir

@@ -53,38 +53,38 @@ CMAKE_SOURCE_DIR = /home/gunjan/Desktop/practice/digital_image_processing
 CMAKE_BINARY_DIR = /home/gunjan/Desktop/practice/digital_image_processing
 
 #=============================================================================
-# Target rules for target CMakeFiles/affine.dir
+# Target rules for target CMakeFiles/blobs.dir
 
 # All Build rule for target.
-CMakeFiles/affine.dir/all:
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/depend
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/build
+CMakeFiles/blobs.dir/all:
+	$(MAKE) -f CMakeFiles/blobs.dir/build.make CMakeFiles/blobs.dir/depend
+	$(MAKE) -f CMakeFiles/blobs.dir/build.make CMakeFiles/blobs.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles  1
-	@echo "Built target affine"
-.PHONY : CMakeFiles/affine.dir/all
+	@echo "Built target blobs"
+.PHONY : CMakeFiles/blobs.dir/all
 
 # Include target in all.
-all: CMakeFiles/affine.dir/all
+all: CMakeFiles/blobs.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/affine.dir/rule: cmake_check_build_system
+CMakeFiles/blobs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/affine.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/blobs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles 0
-.PHONY : CMakeFiles/affine.dir/rule
+.PHONY : CMakeFiles/blobs.dir/rule
 
 # Convenience name for target.
-affine: CMakeFiles/affine.dir/rule
-.PHONY : affine
+blobs: CMakeFiles/blobs.dir/rule
+.PHONY : blobs
 
 # clean rule for target.
-CMakeFiles/affine.dir/clean:
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/clean
-.PHONY : CMakeFiles/affine.dir/clean
+CMakeFiles/blobs.dir/clean:
+	$(MAKE) -f CMakeFiles/blobs.dir/build.make CMakeFiles/blobs.dir/clean
+.PHONY : CMakeFiles/blobs.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/affine.dir/clean
+clean: CMakeFiles/blobs.dir/clean
 .PHONY : clean
 
 #=============================================================================

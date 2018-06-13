@@ -1,0 +1,4 @@
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment4/CMakeFiles/out.dir
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment4/CMakeFiles/color_corrected.dir
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment4/CMakeFiles/part1.dir
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment4/CMakeFiles/part3.dir

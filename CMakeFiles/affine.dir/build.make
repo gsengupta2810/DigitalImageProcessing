@@ -49,37 +49,37 @@ include CMakeFiles/affine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/affine.dir/flags.make
 
-CMakeFiles/affine.dir/affine_transforms.cpp.o: CMakeFiles/affine.dir/flags.make
-CMakeFiles/affine.dir/affine_transforms.cpp.o: affine_transforms.cpp
+CMakeFiles/affine.dir/textSeparation.cpp.o: CMakeFiles/affine.dir/flags.make
+CMakeFiles/affine.dir/textSeparation.cpp.o: textSeparation.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/affine.dir/affine_transforms.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/affine.dir/affine_transforms.cpp.o -c /home/gunjan/Desktop/practice/digital_image_processing/affine_transforms.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/affine.dir/textSeparation.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/affine.dir/textSeparation.cpp.o -c /home/gunjan/Desktop/practice/digital_image_processing/textSeparation.cpp
 
-CMakeFiles/affine.dir/affine_transforms.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/affine.dir/affine_transforms.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/gunjan/Desktop/practice/digital_image_processing/affine_transforms.cpp > CMakeFiles/affine.dir/affine_transforms.cpp.i
+CMakeFiles/affine.dir/textSeparation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/affine.dir/textSeparation.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/gunjan/Desktop/practice/digital_image_processing/textSeparation.cpp > CMakeFiles/affine.dir/textSeparation.cpp.i
 
-CMakeFiles/affine.dir/affine_transforms.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/affine.dir/affine_transforms.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/gunjan/Desktop/practice/digital_image_processing/affine_transforms.cpp -o CMakeFiles/affine.dir/affine_transforms.cpp.s
+CMakeFiles/affine.dir/textSeparation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/affine.dir/textSeparation.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/gunjan/Desktop/practice/digital_image_processing/textSeparation.cpp -o CMakeFiles/affine.dir/textSeparation.cpp.s
 
-CMakeFiles/affine.dir/affine_transforms.cpp.o.requires:
-.PHONY : CMakeFiles/affine.dir/affine_transforms.cpp.o.requires
+CMakeFiles/affine.dir/textSeparation.cpp.o.requires:
+.PHONY : CMakeFiles/affine.dir/textSeparation.cpp.o.requires
 
-CMakeFiles/affine.dir/affine_transforms.cpp.o.provides: CMakeFiles/affine.dir/affine_transforms.cpp.o.requires
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/affine_transforms.cpp.o.provides.build
-.PHONY : CMakeFiles/affine.dir/affine_transforms.cpp.o.provides
+CMakeFiles/affine.dir/textSeparation.cpp.o.provides: CMakeFiles/affine.dir/textSeparation.cpp.o.requires
+	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/textSeparation.cpp.o.provides.build
+.PHONY : CMakeFiles/affine.dir/textSeparation.cpp.o.provides
 
-CMakeFiles/affine.dir/affine_transforms.cpp.o.provides.build: CMakeFiles/affine.dir/affine_transforms.cpp.o
+CMakeFiles/affine.dir/textSeparation.cpp.o.provides.build: CMakeFiles/affine.dir/textSeparation.cpp.o
 
 # Object files for target affine
 affine_OBJECTS = \
-"CMakeFiles/affine.dir/affine_transforms.cpp.o"
+"CMakeFiles/affine.dir/textSeparation.cpp.o"
 
 # External object files for target affine
 affine_EXTERNAL_OBJECTS =
 
-affine: CMakeFiles/affine.dir/affine_transforms.cpp.o
+affine: CMakeFiles/affine.dir/textSeparation.cpp.o
 affine: CMakeFiles/affine.dir/build.make
 affine: /usr/local/lib/libopencv_viz.so.2.4.9
 affine: /usr/local/lib/libopencv_videostab.so.2.4.9
@@ -115,7 +115,7 @@ affine: CMakeFiles/affine.dir/link.txt
 CMakeFiles/affine.dir/build: affine
 .PHONY : CMakeFiles/affine.dir/build
 
-CMakeFiles/affine.dir/requires: CMakeFiles/affine.dir/affine_transforms.cpp.o.requires
+CMakeFiles/affine.dir/requires: CMakeFiles/affine.dir/textSeparation.cpp.o.requires
 .PHONY : CMakeFiles/affine.dir/requires
 
 CMakeFiles/affine.dir/clean:

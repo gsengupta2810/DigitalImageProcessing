@@ -102,41 +102,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named affine
+# Target rules for targets named blobs
 
 # Build rule for target.
-affine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 affine
-.PHONY : affine
+blobs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blobs
+.PHONY : blobs
 
 # fast build rule for target.
-affine/fast:
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/build
-.PHONY : affine/fast
+blobs/fast:
+	$(MAKE) -f CMakeFiles/blobs.dir/build.make CMakeFiles/blobs.dir/build
+.PHONY : blobs/fast
 
-affine_transforms.o: affine_transforms.cpp.o
-.PHONY : affine_transforms.o
+blobs.o: blobs.cpp.o
+.PHONY : blobs.o
 
 # target to build an object file
-affine_transforms.cpp.o:
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/affine_transforms.cpp.o
-.PHONY : affine_transforms.cpp.o
+blobs.cpp.o:
+	$(MAKE) -f CMakeFiles/blobs.dir/build.make CMakeFiles/blobs.dir/blobs.cpp.o
+.PHONY : blobs.cpp.o
 
-affine_transforms.i: affine_transforms.cpp.i
-.PHONY : affine_transforms.i
+blobs.i: blobs.cpp.i
+.PHONY : blobs.i
 
 # target to preprocess a source file
-affine_transforms.cpp.i:
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/affine_transforms.cpp.i
-.PHONY : affine_transforms.cpp.i
+blobs.cpp.i:
+	$(MAKE) -f CMakeFiles/blobs.dir/build.make CMakeFiles/blobs.dir/blobs.cpp.i
+.PHONY : blobs.cpp.i
 
-affine_transforms.s: affine_transforms.cpp.s
-.PHONY : affine_transforms.s
+blobs.s: blobs.cpp.s
+.PHONY : blobs.s
 
 # target to generate assembly for a file
-affine_transforms.cpp.s:
-	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/affine_transforms.cpp.s
-.PHONY : affine_transforms.cpp.s
+blobs.cpp.s:
+	$(MAKE) -f CMakeFiles/blobs.dir/build.make CMakeFiles/blobs.dir/blobs.cpp.s
+.PHONY : blobs.cpp.s
 
 # Help Target
 help:
@@ -146,10 +146,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... affine"
-	@echo "... affine_transforms.o"
-	@echo "... affine_transforms.i"
-	@echo "... affine_transforms.s"
+	@echo "... blobs"
+	@echo "... blobs.o"
+	@echo "... blobs.i"
+	@echo "... blobs.s"
 .PHONY : help
 
 

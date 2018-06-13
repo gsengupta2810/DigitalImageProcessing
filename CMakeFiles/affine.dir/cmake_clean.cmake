@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/affine.dir/affine_transforms.cpp.o"
+  "CMakeFiles/affine.dir/textSeparation.cpp.o"
   "affine.pdb"
   "affine"
 )

@@ -1,0 +1,4 @@
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment1/CMakeFiles/four.dir
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment1/CMakeFiles/two.dir
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment1/CMakeFiles/one.dir
+/home/gunjan/Desktop/practice/digital_image_processing/AIP/Assignment1/CMakeFiles/three.dir

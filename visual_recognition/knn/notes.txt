@@ -1,0 +1,52 @@
+KNN can be used for visual recognition. This has many disadvantages but due to its simplistic approach and good results in some cases, it can be naively used.
+The image recognition task can be stepped down to image classification task. 
+
+L1=> d(I1,I2)=Sum(Ip1-Ip2) ----> accuracy of 38.6% with CIFAR-10 data
+L2=> d(I1,I2)=Sqrt(Sum((Ip1-Ip2)^2)) -------> accuracy of 35.4% with CIFAR-10 data
+
+Basic steps:
+
+	Xtr, Ytr, Xte, Yte = load_CIFAR10('data/cifar10/') # a function provided by CIFAR to load data into train and test vars  
+	# flatten out all images to be one-dimensional
+	Xtr_rows = Xtr.reshape(Xtr.shape[0], 32 * 32 * 3) # Xtr_rows becomes 50000 x 3072
+	Xte_rows = Xte.reshape(Xte.shape[0], 32 * 32 * 3) # Xte_rows becomes 10000 x 3072
+
+	nn = NearestNeighbor() # create a Nearest Neighbor classifier class
+	nn.train(Xtr_rows, Ytr) # train the classifier on the training images and labels
+	Yte_predict = nn.predict(Xte_rows, k = k) # predict labels on the test images with K Nearest Neighbours
+	# and now print the classification accuracy, which is the average number
+	# of examples that are correctly predicted (i.e. label matches)
+	print 'accuracy: %f' % ( np.mean(Yte_predict == Yte) )
+
+
+Hyerparameters:- 
+	What value of K to choose, which L to use? These are the choices called hyperparameters.
+	We might be tempted to suggest that we should try out many different values and see what works best. That is a fine idea and that’s indeed what we will do, but this must be done very carefully. In particular, we cannot use the test set for the purpose of tweaking hyperparameters. Whenever We’re designing Machine Learning algorithms, We should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that We may tune our hyperparameters to work well on the test set, but if We were to deploy our model We could see a significantly reduced performance. In practice, we would say that We overfit to the test set. Another way of looking at it is that if We tune our hyperparameters on the test set, We are effectively using the test set as the training set, and therefore the performance We achieve on it will be too optimistic with respect to what We might actually observe when We deploy our model. But if We only use the test set once at end, it remains a good proxy for measuring the generalization of our classifier (we will see much more discussion surrounding generalization later in the class).
+
+Validation/Cross-Validation:- 
+	Cross-Validation can be used as a method to tune the hyperparameters, when the size of the dataset is relatively small.
+	Even simple validation by dividing the training dataset into a train and a dummy test set.(This is preferred in larger datasets due to easier computation).
+	For example, in 5-fold cross-validation, we would split the training data into 5 equal folds, use 4 of them for training, and 1 for validation. We would then iterate over which fold is the validation fold, evaluate the performance, and finally average the performance across the different folds.
+
+Advantages / Disadvantages:
+	Easy to understand and implement
+	No time to train but computational cost at test time.
+	The Nearest Neighbor Classifier may sometimes be a good choice in some settings (especially if the data is low-dimensional), but it is rarely appropriate for use in practical image classification settings.
+
+
+
+Steps in applying KNN :-
+
+	Preprocess your data: Normalize the features in your data (e.g. one pixel in images) to have zero mean and unit variance. We will cover this in more detail in later sections, and chose not to cover data normalization in this section because pixels in images are usually homogeneous and do not exhibit widely different distributions, alleviating the need for data normalization.
+
+	If your data is very high-dimensional, consider using a dimensionality reduction technique such as PCA (wiki ref, CS229ref, blog ref) or even Random Projections.
+
+	Split your training data randomly into train/val splits. As a rule of thumb, between 70-90% of your data usually goes to the train split. This setting depends on how many hyperparameters you have and how much of an influence you expect them to have. 
+
+	If there are many hyperparameters to estimate, you should err on the side of having larger validation set to estimate them effectively. If you are concerned about the size of your validation data, it is best to split the training data into folds and perform cross-validation. If you can afford the computational budget it is always safer to go with cross-validation (the more folds the better, but more expensive).
+
+	Train and evaluate the kNN classifier on the validation data (for all folds, if doing cross-validation) for many choices of k (e.g. the more the better) and across different distance types (L1 and L2 are good candidates)
+
+	If your kNN classifier is running too long, consider using an Approximate Nearest Neighbor library (e.g. FLANN) to accelerate the retrieval (at cost of some accuracy).
+
+	Take note of the hyperparameters that gave the best results. There is a question of whether you should use the full training set with the best hyperparameters, since the optimal hyperparameters might change if you were to fold the validation data into your training set (since the size of the data would be larger). In practice it is cleaner to not use the validation data in the final classifier and consider it to be burned on estimating the hyperparameters. Evaluate the best model on the test set. Report the test set accuracy and declare the result to be the performance of the kNN classifier on your data.

@@ -6,10 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/gunjan/Desktop/practice/digital_image_processing/affine_transforms.cpp
-iostream
--
+/home/gunjan/Desktop/practice/digital_image_processing/textSeparation.cpp
 opencv2/opencv.hpp
+-
+iostream
 -
 
 /usr/local/include/opencv2/calib3d/calib3d.hpp

@@ -1,1 +1,1 @@
-/home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles/affine.dir
+/home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles/blobs.dir

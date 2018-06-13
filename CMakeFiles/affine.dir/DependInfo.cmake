@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gunjan/Desktop/practice/digital_image_processing/affine_transforms.cpp" "/home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles/affine.dir/affine_transforms.cpp.o"
+  "/home/gunjan/Desktop/practice/digital_image_processing/textSeparation.cpp" "/home/gunjan/Desktop/practice/digital_image_processing/CMakeFiles/affine.dir/textSeparation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

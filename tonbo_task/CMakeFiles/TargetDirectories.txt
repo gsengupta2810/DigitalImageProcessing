@@ -1,0 +1,3 @@
+/home/gunjan/Desktop/practice/digital_image_processing/tonbo_task/CMakeFiles/task.dir
+/home/gunjan/Desktop/practice/digital_image_processing/tonbo_task/CMakeFiles/task_1.dir
+/home/gunjan/Desktop/practice/digital_image_processing/tonbo_task/CMakeFiles/blobs.dir

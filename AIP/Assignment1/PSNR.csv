@@ -1,0 +1,4 @@
+image,PSNR_value
+noisy,9.9446
+mean_filtered,9.9446
+median_filtered,9.9214
